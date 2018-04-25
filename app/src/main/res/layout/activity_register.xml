@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yuzhua.theloanapplication.activities.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="手机号：" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:inputType="phone"
+            style="@style/EdittextStyle"
+            android:hint="@string/input_telphone"
+            android:imeOptions="actionNext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="验证码：" />
+
+        <EditText
+            android:id="@+id/et_authcode"
+            style="@style/EdittextStyle"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/input_auth"
+            android:imeOptions="actionNext" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rectangle_white_service"
+            android:padding="4dp"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_role"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="选择角色：" />
+
+        <RadioGroup
+            android:id="@+id/rg_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/gb_fangkuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="放款方" />
+
+            <RadioButton
+                android:id="@+id/rg_jiekuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="借款方" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="密码：" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_password"
+            style="@style/EdittextStyle"
+            android:hint="@string/input_pwd"
+            android:imeOptions="actionNext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="再次确认：" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_confirm_pwd"
+            style="@style/EdittextStyle"
+            android:hint="@string/input_pwd_again"
+            android:imeOptions="actionDone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_cannot_code"
+        style="@style/NormalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center|right"
+        android:gravity="center_vertical|right"
+        android:text="收不到验证码？" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="确认"
+        android:layout_marginTop="30dp"
+        style="@style/NormalButtonStyle"
+      />
+
+</LinearLayout>

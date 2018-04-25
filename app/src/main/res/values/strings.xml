@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TheLoanApplication</string>
+    <string name="hello">，您好！</string>
+    <string name="service_msg">如遇见常见问题可直接在 “我的” -> “常见问题“里面直接查询。如未解决拨打400-1234-123</string>
+    <string name="edit_message"><![CDATA[<font> &emsp &emsp 编辑短信795492发送到10690529135060，完成后返回短信验证码框，输入注册的手机号后4位，确认提交即可！</font> ]]></string>
+    <string name="input_pwd_again">请再次输入密码</string>
+    <string name="input_pwd">请输入新密码</string>
+    <string name="input_auth">请输入验证码</string>
+    <string name="input_telphone">请输入手机号</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yuzhua.theloanapplication.activities.MainActivity">
+
+
+    <com.yuzhua.shoppingdemo.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.yuzhua.shoppingdemo.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/selector_btn_home"
+            android:text="首页" />
+
+
+        <RadioButton
+            android:id="@+id/rb_nearby"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/selector_btn_fujing"
+            android:text="关注" />
+
+        <RadioButton
+            android:id="@+id/rb_shoppingcart"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/selector_btn_gouwuche"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/selector_btn_me"
+            android:text="我的" />
+    </RadioGroup>
+
+
+</LinearLayout>
