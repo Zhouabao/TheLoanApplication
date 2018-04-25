@@ -64,7 +64,7 @@ public class ResetPasswordActivity extends BaseActivity {
         if (TextUtils.isEmpty(etPhone.getText().toString())) {
             ToastUtil.toastWarning(this, "手机号码不能为空！", false);
             return;
-        } else if (RegexUtils.isMobileSimple(etPhone.getText().toString())) {
+        } else if (!RegexUtils.isMobileSimple(etPhone.getText().toString())) {
             ToastUtil.toastWarning(this, "手机号码格式不正确！", false);
             return;
         }

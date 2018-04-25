@@ -7,4 +7,7 @@
     <string name="input_pwd">请输入新密码</string>
     <string name="input_auth">请输入验证码</string>
     <string name="input_telphone">请输入手机号</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -4,5 +4,14 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="blueLight1">#0084FF</color>
+    <color name="blue">#5792FA</color>
+    <color name="black_1">#5D5D5D</color>
+    <color name="black_hint">#C8C8C8</color>
+    <color name="black_actionbar_title">#4A4A4A</color>
+    <color name="black_big_text">#333333</color>
+    <color name="orange_confirm">#FF6134</color>
+    <color name="orange_money">#E34949</color>
+    <color name="tab_select_text">#2F2F2F</color>
+    <color name="tab_unselect_text">#C3C2CA</color>
 
 </resources>

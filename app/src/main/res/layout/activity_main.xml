@@ -8,14 +8,14 @@
     tools:context="com.yuzhua.theloanapplication.activities.MainActivity">
 
 
-    <com.yuzhua.shoppingdemo.NoScrollViewPager
-        android:id="@+id/viewPager"
+    <com.yuzhua.theloanapplication.widgets.NoScrollViewPager
+        android:id="@+id/main_viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"></com.yuzhua.shoppingdemo.NoScrollViewPager>
+        android:layout_weight="1" />
 
     <RadioGroup
-        android:id="@+id/rg_group"
+        android:id="@+id/rg_main"
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:layout_marginBottom="0dp"
@@ -23,28 +23,28 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/rb_home"
+            android:id="@+id/rb_index"
             style="@style/tab_style"
-            android:drawableTop="@drawable/selector_btn_home"
+            android:drawableTop="@drawable/index_selector"
             android:text="首页" />
 
 
         <RadioButton
-            android:id="@+id/rb_nearby"
+            android:id="@+id/rb_loan"
             style="@style/tab_style"
-            android:drawableTop="@drawable/selector_btn_fujing"
-            android:text="关注" />
+            android:drawableTop="@drawable/loan_selector"
+            android:text="放款明细" />
 
         <RadioButton
-            android:id="@+id/rb_shoppingcart"
+            android:id="@+id/rb_message"
             style="@style/tab_style"
-            android:drawableTop="@drawable/selector_btn_gouwuche"
-            android:text="购物车" />
+            android:drawableTop="@drawable/message_selector"
+            android:text="消息" />
 
         <RadioButton
-            android:id="@+id/rb_me"
+            android:id="@+id/rb_my"
             style="@style/tab_style"
-            android:drawableTop="@drawable/selector_btn_me"
+            android:drawableTop="@drawable/my_selector"
             android:text="我的" />
     </RadioGroup>
 

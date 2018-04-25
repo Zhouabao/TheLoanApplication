@@ -45,7 +45,7 @@ public class RegexUtils {
      * @param input
      * @return
      */
-    public static boolean isMobileSimple(final CharSequence input) {
+    public static boolean isMobileSimple(CharSequence input) {
         return isMatch(REGEX_MOBILE_SIMPLE, input);
     }
 
@@ -55,7 +55,7 @@ public class RegexUtils {
      * @param input
      * @return
      */
-    public static boolean isMobileExact(final CharSequence input) {
+    public static boolean isMobileExact(CharSequence input) {
         return isMatch(REGEX_MOBILE_EXACT, input);
     }
 
@@ -65,7 +65,7 @@ public class RegexUtils {
      * @param input
      * @return
      */
-    public static boolean isTel(final CharSequence input) {
+    public static boolean isTel(CharSequence input) {
         return isMatch(REGEX_TEL, input);
     }
 
@@ -75,7 +75,7 @@ public class RegexUtils {
      * @param input
      * @return
      */
-    public static boolean isIDCard15(final CharSequence input) {
+    public static boolean isIDCard15(CharSequence input) {
         return isMatch(REGEX_ID_CARD15, input);
     }
 
@@ -85,7 +85,7 @@ public class RegexUtils {
      * @param input
      * @return
      */
-    public static boolean isIDCard18(final CharSequence input) {
+    public static boolean isIDCard18(CharSequence input) {
         return isMatch(REGEX_ID_CARD18, input);
     }
 
@@ -95,7 +95,7 @@ public class RegexUtils {
      * @param input
      * @return
      */
-    public static boolean isEmail(final CharSequence input) {
+    public static boolean isEmail(CharSequence input) {
         return isMatch(REGEX_EMAIL, input);
     }
 
@@ -105,7 +105,7 @@ public class RegexUtils {
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
      */
-    public static boolean isURL(final CharSequence input) {
+    public static boolean isURL(CharSequence input) {
         return isMatch(REGEX_URL, input);
     }
 
@@ -115,7 +115,7 @@ public class RegexUtils {
      * @param input
      * @return
      */
-    public static boolean isZh(final CharSequence input) {
+    public static boolean isZh(CharSequence input) {
         return isMatch(REGEX_ZH, input);
     }
 
@@ -125,7 +125,7 @@ public class RegexUtils {
      * @param input
      * @return
      */
-    public static boolean isUsername(final CharSequence input) {
+    public static boolean isUsername(CharSequence input) {
         return isMatch(REGEX_USERNAME, input);
     }
 
@@ -135,7 +135,7 @@ public class RegexUtils {
      * @param input
      * @return
      */
-    public static boolean isDate(final CharSequence input) {
+    public static boolean isDate(CharSequence input) {
         return isMatch(REGEX_DATE, input);
     }
 
@@ -145,7 +145,7 @@ public class RegexUtils {
      * @param input
      * @return
      */
-    public static boolean isIP(final CharSequence input) {
+    public static boolean isIP(CharSequence input) {
         return isMatch(REGEX_IP, input);
     }
 
@@ -156,7 +156,7 @@ public class RegexUtils {
      * @param input The input.
      * @return {@code true}: yes<br>{@code false}: no
      */
-    public static boolean isMatch(final String regex, final CharSequence input) {
+    public static boolean isMatch(String regex, final CharSequence input) {
         return input != null && input.length() > 0 && Pattern.matches(regex, input);
     }
 
@@ -167,7 +167,7 @@ public class RegexUtils {
      * @param input The input.
      * @return the list of input matches the regex
      */
-    public static List<String> getMatches(final String regex, final CharSequence input) {
+    public static List<String> getMatches(String regex, final CharSequence input) {
         if (input == null) return null;
         List<String> matches = new ArrayList<>();
         Pattern pattern = Pattern.compile(regex);
@@ -185,7 +185,7 @@ public class RegexUtils {
      * @param regex The regex.
      * @return the array of strings computed by splitting input around matches of regex
      */
-    public static String[] getSplits(final String input, final String regex) {
+    public static String[] getSplits(String input, final String regex) {
         if (input == null) return null;
         return input.split(regex);
     }
@@ -201,7 +201,7 @@ public class RegexUtils {
      * subsequence by the replacement string, substituting captured
      * subsequences as needed
      */
-    public static String getReplaceFirst(final String input, final String regex, final String replacement) {
+    public static String getReplaceFirst(String input, final String regex, final String replacement) {
         if (input == null) return null;
         return Pattern.compile(regex).matcher(input).replaceFirst(replacement);
     }
@@ -217,7 +217,7 @@ public class RegexUtils {
      * by the replacement string, substituting captured subsequences
      * as needed
      */
-    public static String getReplaceAll(final String input, final String regex, final String replacement) {
+    public static String getReplaceAll(String input, final String regex, final String replacement) {
         if (input == null) return null;
         return Pattern.compile(regex).matcher(input).replaceAll(replacement);
     }

@@ -64,7 +64,7 @@ public class LoginActivity extends BaseActivity implements CompoundButton.OnChec
         if (TextUtils.isEmpty(etPhone.getText().toString())) {
             ToastUtil.toastWarning(this, "手机号码不能为空！", false);
             return;
-        } else if (RegexUtils.isMobileSimple(etPhone.getText().toString())) {
+        } else if (!RegexUtils.isMobileSimple(etPhone.getText().toString())) {
             ToastUtil.toastWarning(this, "手机号码格式不正确！", false);
             return;
         }
@@ -76,9 +76,9 @@ public class LoginActivity extends BaseActivity implements CompoundButton.OnChec
 
         sharedPreferenceUtil.saveBoolean(Constants.ISLOGIN, true);
         if (sharedPreferenceUtil.getBoolean(Constants.ISAUTH, false))
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
-        else
             startActivity(new Intent(LoginActivity.this, AuthenticationActivity.class));
+        else
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
         finish();
     }
 
